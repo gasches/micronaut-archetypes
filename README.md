@@ -17,7 +17,7 @@ Create a project
 ```bash
 mvn archetype:generate \
     -DinteractiveMode=false \
-    -DarchetypeGroupId=io.gasches.archetypes \
+    -DarchetypeGroupId=io.github.gasches.archetypes \
     -DarchetypeArtifactId=micronaut-service \
     -DarchetypeVersion=1.0.4 \
     -DgroupId=com.example \
