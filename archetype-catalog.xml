@@ -6,7 +6,7 @@
     http://maven.apache.org/xsd/archetype-catalog-1.0.0.xsd">
     <archetypes>
         <archetype>
-            <groupId>io.github.gasches</groupId>
+            <groupId>io.github.gasches.archetypes</groupId>
             <artifactId>micronaut-service</artifactId>
             <version>1.0.4</version>
             <repository>https://github.com/gasches/micronaut-service-archetype</repository>
