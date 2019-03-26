@@ -2,11 +2,32 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>io.gasches.archetypes</groupId>
+
+    <groupId>io.github.gasches.archetypes</groupId>
     <artifactId>micronaut-service</artifactId>
     <version>1.0.4</version>
-    <name>Micronaut service app archetype</name>
+
+    <name>${project.groupId}:${project.artifactId}</name>
+    <description>Micronaut service app archetype</description>
     <url>https://github.com/gasches/micronaut-service-archetype</url>
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://opensource.org/licenses/MIT</url>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <name>Semyon Gashchenko</name>
+            <email>semyon.gashchenko@gmail.com</email>
+            <organizationUrl>https://gasches.github.io/</organizationUrl>
+        </developer>
+    </developers>
+    <scm>
+        <url>https://github.com/gasches/micronaut-service-archetype</url>
+        <connection>scm:git:git@github.com:gasches/micronaut-service-archetype.git</connection>
+        <developerConnection>scm:git:git@github.com:gasches/micronaut-service-archetype.git</developerConnection>
+    </scm>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
