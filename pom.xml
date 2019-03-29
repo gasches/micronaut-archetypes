@@ -3,8 +3,9 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.github.gasches.archetypes</groupId>
-    <artifactId>micronaut-service</artifactId>
+    <groupId>cc.gasches.archetypes</groupId>
+    <artifactId>micronaut-archetypes</artifactId>
+    <packaging>pom</packaging>
     <version>1.0.4</version>
 
     <name>${project.groupId}:${project.artifactId}</name>
@@ -20,7 +21,7 @@
         <developer>
             <name>Semyon Gashchenko</name>
             <email>semyon.gashchenko@gmail.com</email>
-            <organizationUrl>https://gasches.github.io/</organizationUrl>
+            <organizationUrl>https://gasches.cc/</organizationUrl>
         </developer>
     </developers>
     <scm>
@@ -42,33 +43,37 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <resources-plugin.version>3.0.2</resources-plugin.version>
+        <archetype-plugin.version>3.0.1</archetype-plugin.version>
+        <archetype-packaging.version>3.0.1</archetype-packaging.version>
         <staging-maven-plugin.version>1.6.8</staging-maven-plugin.version>
+        <source-plugin.version>3.0.1</source-plugin.version>
+        <javadoc-plugin.version>3.0.1</javadoc-plugin.version>
+        <gpg-plugin.version>1.6</gpg-plugin.version>
+
+        <micronaut.version>${project.version}</micronaut.version>
+        <maven-wrapper.version>3.5.3</maven-wrapper.version>
+        <gradle-wrapper.version>4.10</gradle-wrapper.version>
     </properties>
 
     <build>
-        <extensions>
-            <extension>
-                <groupId>org.apache.maven.archetype</groupId>
-                <artifactId>archetype-packaging</artifactId>
-                <version>3.0.1</version>
-            </extension>
-        </extensions>
         <pluginManagement>
             <plugins>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-archetype-plugin</artifactId>
-                    <version>3.0.1</version>
+                    <version>${archetype-plugin.version}</version>
                     <configuration>
                         <encoding>UTF-8</encoding>
                     </configuration>
                 </plugin>
                 <plugin>
                     <artifactId>maven-resources-plugin</artifactId>
-                    <version>3.0.2</version>
+                    <version>${resources-plugin.version}</version>
                     <configuration>
                         <addDefaultExcludes>false</addDefaultExcludes>
                         <encoding>UTF-8</encoding>
+                        <escapeString>\</escapeString>
                     </configuration>
                 </plugin>
             </plugins>
@@ -94,7 +99,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-source-plugin</artifactId>
-                        <version>3.0.1</version>
+                        <version>${source-plugin.version}</version>
                         <executions>
                             <execution>
                                 <id>attach-sources</id>
@@ -107,7 +112,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-javadoc-plugin</artifactId>
-                        <version>3.0.1</version>
+                        <version>${javadoc-plugin.version}</version>
                         <executions>
                             <execution>
                                 <id>attach-javadocs</id>
@@ -120,7 +125,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
-                        <version>1.6</version>
+                        <version>${gpg-plugin.version}</version>
                         <executions>
                             <execution>
                                 <id>sign-artifacts</id>
@@ -135,4 +140,8 @@
             </build>
         </profile>
     </profiles>
+
+    <modules>
+        <module>micronaut-java-service</module>
+    </modules>
 </project>

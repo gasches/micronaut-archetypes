@@ -8,8 +8,8 @@ plugins {
 apply plugin:"application"
 apply plugin:"java"
 
-version "${version}"
-group "${groupId}"
+version "\${version}"
+group "\${groupId}"
 
 repositories {
     mavenLocal()
@@ -19,7 +19,7 @@ repositories {
 
 dependencyManagement {
     imports {
-        mavenBom 'io.micronaut:micronaut-bom:1.0.4'
+        mavenBom 'io.micronaut:micronaut-bom:${micronaut.version}'
     }
 }
 
@@ -44,7 +44,7 @@ shadowJar {
 
 run.jvmArgs('-noverify', '-XX:TieredStopAtLevel=1')
 
-mainClassName = "${package}.Application"
+mainClassName = "\${package}.Application"
 tasks.withType(JavaCompile){
     options.encoding = "UTF-8"
     options.compilerArgs.add('-parameters')

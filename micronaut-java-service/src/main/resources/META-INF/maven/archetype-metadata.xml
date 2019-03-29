@@ -1,4 +1,4 @@
-<archetype-descriptor name="micronaut-service"
+<archetype-descriptor name="micronaut-java-service"
     xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0
@@ -8,7 +8,7 @@
             <defaultValue>io.micronaut.example</defaultValue>
         </requiredProperty>
         <requiredProperty key="artifactId">
-            <defaultValue>micronaut-service-example</defaultValue>
+            <defaultValue>micronaut-java-service</defaultValue>
         </requiredProperty>
         <requiredProperty key="package">
             <defaultValue>io.micronaut.example</defaultValue>
