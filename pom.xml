@@ -143,5 +143,6 @@
 
     <modules>
         <module>micronaut-java-service</module>
+        <module>micronaut-java-cli</module>
     </modules>
 </project>
