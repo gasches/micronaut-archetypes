@@ -12,6 +12,9 @@
     <artifactId>micronaut-groovy-cli</artifactId>
     <packaging>maven-archetype</packaging>
 
+    <name>${project.groupId}:${project.artifactId}</name>
+    <description>Micronaut Groovy CLI Application Archetype</description>
+
     <build>
         <extensions>
             <extension>

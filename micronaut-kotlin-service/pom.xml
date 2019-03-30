@@ -12,6 +12,9 @@
     <artifactId>micronaut-kotlin-service</artifactId>
     <packaging>maven-archetype</packaging>
 
+    <name>${project.groupId}:${project.artifactId}</name>
+    <description>Micronaut Kotlin Service Archetype</description>
+
     <build>
         <extensions>
             <extension>

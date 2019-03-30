@@ -12,6 +12,9 @@
     <artifactId>micronaut-java-cli</artifactId>
     <packaging>maven-archetype</packaging>
 
+    <name>${project.groupId}:${project.artifactId}</name>
+    <description>Micronaut Java CLI Application Archetype</description>
+
     <build>
         <extensions>
             <extension>

@@ -8,9 +8,53 @@
         <archetype>
             <groupId>cc.gasches.archetypes</groupId>
             <artifactId>micronaut-java-service</artifactId>
-            <version>1.0.4</version>
-            <repository>https://github.com/gasches/micronaut-archetypes</repository>
-            <description>Micronaut service app archetype</description>
+            <version>1.1.0.M2</version>
+            <repository>https://github.com/gasches/micronaut-archetypes/tree/master/micronaut-java-service</repository>
+            <description>Micronaut Java Service Archetype</description>
+        </archetype>
+        <archetype>
+            <groupId>cc.gasches.archetypes</groupId>
+            <artifactId>micronaut-java-cli</artifactId>
+            <version>1.1.0.M2</version>
+            <repository>https://github.com/gasches/micronaut-archetypes/tree/master/micronaut-java-cli</repository>
+            <description>Micronaut Java CLI Application Archetype</description>
+        </archetype>
+        <archetype>
+            <groupId>cc.gasches.archetypes</groupId>
+            <artifactId>micronaut-java-function-aws</artifactId>
+            <version>1.1.0.M2</version>
+            <repository>https://github.com/gasches/micronaut-archetypes/tree/master/micronaut-java-function-aws</repository>
+            <description>Micronaut Java AWS Function Archetype</description>
+        </archetype>
+
+        <archetype>
+            <groupId>cc.gasches.archetypes</groupId>
+            <artifactId>micronaut-kotlin-service</artifactId>
+            <version>1.1.0.M2</version>
+            <repository>https://github.com/gasches/micronaut-archetypes/tree/master/micronaut-kotlin-service</repository>
+            <description>Micronaut Kotlin Service Archetype</description>
+        </archetype>
+        <archetype>
+            <groupId>cc.gasches.archetypes</groupId>
+            <artifactId>micronaut-kotlin-cli</artifactId>
+            <version>1.1.0.M2</version>
+            <repository>https://github.com/gasches/micronaut-archetypes/tree/master/micronaut-kotlin-cli</repository>
+            <description>Micronaut Kotlin CLI Application Archetype</description>
+        </archetype>
+
+        <archetype>
+            <groupId>cc.gasches.archetypes</groupId>
+            <artifactId>micronaut-groovy-service</artifactId>
+            <version>1.1.0.M2</version>
+            <repository>https://github.com/gasches/micronaut-archetypes/tree/master/micronaut-groovy-service</repository>
+            <description>Micronaut Groovy Service Archetype</description>
+        </archetype>
+        <archetype>
+            <groupId>cc.gasches.archetypes</groupId>
+            <artifactId>micronaut-groovy-cli</artifactId>
+            <version>1.1.0.M2</version>
+            <repository>https://github.com/gasches/micronaut-archetypes/tree/master/micronaut-groovy-cli</repository>
+            <description>Micronaut Groovy CLI Application Archetype</description>
         </archetype>
     </archetypes>
 </archetype-catalog>

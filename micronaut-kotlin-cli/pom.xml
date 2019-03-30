@@ -12,6 +12,9 @@
     <artifactId>micronaut-kotlin-cli</artifactId>
     <packaging>maven-archetype</packaging>
 
+    <name>${project.groupId}:${project.artifactId}</name>
+    <description>Micronaut Kotlin CLI Application Archetype</description>
+
     <build>
         <extensions>
             <extension>
