@@ -150,5 +150,6 @@
         <module>micronaut-kotlin-service</module>
         <module>micronaut-kotlin-cli</module>
         <module>micronaut-groovy-service</module>
+        <module>micronaut-groovy-cli</module>
     </modules>
 </project>
