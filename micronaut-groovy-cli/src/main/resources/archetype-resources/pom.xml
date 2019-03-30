@@ -9,7 +9,7 @@
     <version>\${version}</version>
     <properties>
         <micronaut.version>${micronaut.version}</micronaut.version>
-        <jdk.version>1.8</jdk.version>
+        <jdk.version>${jdk.version}</jdk.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <exec.mainClass>\${package}.Application</exec.mainClass>
     </properties>

@@ -173,7 +173,7 @@
                     <pluginOptions>
                         <option>all-open:annotation=io.micronaut.aop.Around</option>
                     </pluginOptions>
-                    <jvmTarget>${jdk.version}</jvmTarget>
+                    <jvmTarget>\${d}{jdk.version}</jvmTarget>
                 </configuration>
                 <executions>
                     <execution>
