@@ -54,6 +54,7 @@
         <micronaut.version>${project.version}</micronaut.version>
         <maven-wrapper.version>3.5.3</maven-wrapper.version>
         <gradle-wrapper.version>4.10</gradle-wrapper.version>
+        <kotlin.version>1.2.61</kotlin.version>
     </properties>
 
     <build>
@@ -145,5 +146,6 @@
         <module>micronaut-java-service</module>
         <module>micronaut-java-cli</module>
         <module>micronaut-java-function-aws</module>
+        <module>micronaut-kotlin-service</module>
     </modules>
 </project>
