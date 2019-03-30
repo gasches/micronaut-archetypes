@@ -51,6 +51,7 @@
         <javadoc-plugin.version>3.0.1</javadoc-plugin.version>
         <gpg-plugin.version>1.6</gpg-plugin.version>
 
+        <jdk.version>1.8</jdk.version>
         <micronaut.version>${project.version}</micronaut.version>
         <maven-wrapper.version>3.5.3</maven-wrapper.version>
         <gradle-wrapper.version>4.10</gradle-wrapper.version>
@@ -147,5 +148,6 @@
         <module>micronaut-java-cli</module>
         <module>micronaut-java-function-aws</module>
         <module>micronaut-kotlin-service</module>
+        <module>micronaut-kotlin-cli</module>
     </modules>
 </project>

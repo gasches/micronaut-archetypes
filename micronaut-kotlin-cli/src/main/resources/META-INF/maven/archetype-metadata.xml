@@ -1,0 +1,71 @@
+<archetype-descriptor name="micronaut-kotlin-cli"
+    xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0
+    http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd">
+    <requiredProperties>
+        <requiredProperty key="groupId">
+            <defaultValue>io.micronaut.example</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="artifactId">
+            <defaultValue>micronaut-kotlin-cli</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="package">
+            <defaultValue>io.micronaut.example</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="version">
+            <defaultValue>1.0.0-SNAPSHOT</defaultValue>
+        </requiredProperty>
+    </requiredProperties>
+
+    <fileSets>
+        <fileSet filtered="true" encoding="UTF-8">
+            <directory/>
+            <includes>
+                <include>build.gradle</include>
+                <include>gradle.properties</include>
+                <include>micronaut-cli.yml</include>
+                <include>settings.gradle</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <directory/>
+            <includes>
+                <include>.gitignore</include>
+                <include>mvnw*</include>
+                <include>gradlew*</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <directory>.mvn</directory>
+            <includes>
+                <include>**/*</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <directory>gradle</directory>
+            <includes>
+                <include>**/*</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+            <directory>src/main/kotlin</directory>
+            <includes>
+                <include>**/*.kt</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+            <directory>src/main/resources</directory>
+            <includes>
+                <include>application.yml</include>
+                <include>logback.xml</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+            <directory>src/test/kotlin</directory>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+            <directory>src/test/resources</directory>
+        </fileSet>
+    </fileSets>
+</archetype-descriptor>
