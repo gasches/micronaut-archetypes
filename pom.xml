@@ -149,5 +149,6 @@
         <module>micronaut-java-function-aws</module>
         <module>micronaut-kotlin-service</module>
         <module>micronaut-kotlin-cli</module>
+        <module>micronaut-groovy-service</module>
     </modules>
 </project>
