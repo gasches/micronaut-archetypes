@@ -32,7 +32,7 @@ dependencies {
     compile "io.micronaut:micronaut-runtime-groovy"
     compile "io.micronaut:micronaut-validation"
     compileOnly "io.micronaut:micronaut-inject-groovy"
-    runtime "ch.qos.logback:logback-classic:1.2.3"
+    runtime "ch.qos.logback:logback-classic:${logback.version}"
     testAnnotationProcessor "io.micronaut:micronaut-inject-java"
     testCompile("org.spockframework:spock-core") {
         exclude group: "org.codehaus.groovy", module: "groovy-all"

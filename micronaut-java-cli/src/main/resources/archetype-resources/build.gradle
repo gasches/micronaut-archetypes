@@ -35,7 +35,7 @@ dependencies {
     compile "io.micronaut.configuration:micronaut-picocli"
     compile "io.micronaut:micronaut-inject"
     compile "io.micronaut:micronaut-validation"
-    runtime "ch.qos.logback:logback-classic:1.2.3"
+    runtime "ch.qos.logback:logback-classic:${logback.version}"
     testAnnotationProcessor "io.micronaut:micronaut-inject-java"
     testCompile "io.micronaut:micronaut-inject-java"
     testCompile "junit:junit:4.12"
