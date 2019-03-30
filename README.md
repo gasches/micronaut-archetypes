@@ -1,9 +1,9 @@
-Micronaut Service App Maven Archetype
+Micronaut Maven Archetypes
 ======================================
 
 Summary
 -------
-The project is a Maven archetype for Micronaut application based on service profile.
+Maven Archetypes For Micronaut Framework.
 
 Prerequisites
 -------------
@@ -11,15 +11,17 @@ Prerequisites
 - JDK 8 (or higher)
 - Maven 3
 
-Create a project
+Create Service
 ----------------
+
+Java:
 
 ```bash
 mvn archetype:generate \
     -DinteractiveMode=false \
-    -DarchetypeGroupId=io.github.gasches.archetypes \
-    -DarchetypeArtifactId=micronaut-service \
-    -DarchetypeVersion=1.0.4 \
+    -DarchetypeGroupId=cc.gasches.archetypes \
+    -DarchetypeArtifactId=micronaut-java-service \
+    -DarchetypeVersion=1.1.0.M2 \
     -DgroupId=com.example \
     -DartifactId=micronaut-example \
     -Dpackage=com.example.micronaut
@@ -28,7 +30,93 @@ mvn archetype:generate \
 
 Note: Available `buildTool` options: _gradle_, _maven_ (default). This property is used only for _Dockerfile_ conditional templating.
 
-Run the project
+Kotlin:
+
+```bash
+mvn archetype:generate \
+    -DinteractiveMode=false \
+    -DarchetypeGroupId=cc.gasches.archetypes \
+    -DarchetypeArtifactId=micronaut-kotlin-service \
+    -DarchetypeVersion=1.1.0.M2 \
+    -DgroupId=com.example \
+    -DartifactId=micronaut-example \
+    -Dpackage=com.example.micronaut
+    -DbuildTool=maven
+```
+
+Groovy:
+
+```bash
+mvn archetype:generate \
+    -DinteractiveMode=false \
+    -DarchetypeGroupId=cc.gasches.archetypes \
+    -DarchetypeArtifactId=micronaut-groovy-service \
+    -DarchetypeVersion=1.1.0.M2 \
+    -DgroupId=com.example \
+    -DartifactId=micronaut-example \
+    -Dpackage=com.example.micronaut
+    -DbuildTool=maven
+```
+
+Create CLI Application
+----------------
+
+Java:
+
+```bash
+mvn archetype:generate \
+    -DinteractiveMode=false \
+    -DarchetypeGroupId=cc.gasches.archetypes \
+    -DarchetypeArtifactId=micronaut-java-cli \
+    -DarchetypeVersion=1.1.0.M2 \
+    -DgroupId=com.example \
+    -DartifactId=micronaut-example \
+    -Dpackage=com.example.micronaut
+```
+
+Kotlin:
+
+```bash
+mvn archetype:generate \
+    -DinteractiveMode=false \
+    -DarchetypeGroupId=cc.gasches.archetypes \
+    -DarchetypeArtifactId=micronaut-kotlin-cli \
+    -DarchetypeVersion=1.1.0.M2 \
+    -DgroupId=com.example \
+    -DartifactId=micronaut-example \
+    -Dpackage=com.example.micronaut
+```
+
+Groovy:
+
+```bash
+mvn archetype:generate \
+    -DinteractiveMode=false \
+    -DarchetypeGroupId=cc.gasches.archetypes \
+    -DarchetypeArtifactId=micronaut-groovy-cli \
+    -DarchetypeVersion=1.1.0.M2 \
+    -DgroupId=com.example \
+    -DartifactId=micronaut-example \
+    -Dpackage=com.example.micronaut
+```
+
+Create AWS Function
+----------------
+
+Java:
+
+```bash
+mvn archetype:generate \
+    -DinteractiveMode=false \
+    -DarchetypeGroupId=cc.gasches.archetypes \
+    -DarchetypeArtifactId=micronaut-java-function-aws \
+    -DarchetypeVersion=1.1.0.M2 \
+    -DgroupId=com.example \
+    -DartifactId=micronaut-example \
+    -Dpackage=com.example.micronaut
+```
+
+Run Created Application
 ----------------
 
 Maven:
