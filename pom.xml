@@ -10,7 +10,7 @@
 
     <name>${project.groupId}:${project.artifactId}</name>
     <description>Micronaut service app archetype</description>
-    <url>https://github.com/gasches/micronaut-service-archetype</url>
+    <url>https://github.com/gasches/micronaut-archetypes</url>
     <licenses>
         <license>
             <name>MIT License</name>
@@ -25,9 +25,9 @@
         </developer>
     </developers>
     <scm>
-        <url>https://github.com/gasches/micronaut-service-archetype</url>
-        <connection>scm:git:git@github.com:gasches/micronaut-service-archetype.git</connection>
-        <developerConnection>scm:git:git@github.com:gasches/micronaut-service-archetype.git</developerConnection>
+        <url>https://github.com/gasches/micronaut-archetypes</url>
+        <connection>scm:git:git@github.com:gasches/micronaut-archetypes.git</connection>
+        <developerConnection>scm:git:git@github.com:gasches/micronaut-archetypes.git</developerConnection>
     </scm>
 
     <distributionManagement>
