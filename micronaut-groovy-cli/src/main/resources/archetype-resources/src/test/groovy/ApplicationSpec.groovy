@@ -14,7 +14,7 @@ class ApplicationCommandSpec extends Specification {
     @AutoCleanup
     ApplicationContext ctx = ApplicationContext.run(Environment.CLI, Environment.TEST)
 
-    void "test groovy-maven-cli with command line option"() {
+    void "test ${artifactId} with command line option"() {
         given:
             ByteArrayOutputStream baos = new ByteArrayOutputStream()
             System.setOut(new PrintStream(baos))

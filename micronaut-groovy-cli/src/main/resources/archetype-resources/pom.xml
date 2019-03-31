@@ -194,7 +194,7 @@
                             <properties>
                                 <property>
                                     <name>groovy.target.directory</name>
-                                    <value>\${project.build.directory}/classes</value>
+                                    <value>\${d}{project.build.directory}/classes</value>
                                 </property>
                                 <property>
                                     <name>groovy.parameters</name>

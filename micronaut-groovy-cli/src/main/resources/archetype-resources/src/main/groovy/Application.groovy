@@ -5,7 +5,7 @@ import io.micronaut.configuration.picocli.PicocliRunner
 import picocli.CommandLine.Command
 import picocli.CommandLine.Option
 
-@Command(name = 'groovy-maven-cli',
+@Command(name = '${artifactId}',
         description = '...',
         mixinStandardHelpOptions = true)
 class Application implements Runnable {
