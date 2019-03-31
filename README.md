@@ -5,6 +5,12 @@ Summary
 -------
 Maven Archetypes For Micronaut Framework.
 
+To see available archetypes and pick one to instantiate:
+
+```bash
+mvn archetype:generate -Dfilter=cc.gasches.archetypes:micronaut
+```
+
 Prerequisites
 -------------
 
