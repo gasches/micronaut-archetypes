@@ -61,6 +61,11 @@
             <directory>src/main/resources</directory>
             <includes>
                 <include>application.yml</include>
+            </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+            <directory>src/main/resources</directory>
+            <includes>
                 <include>logback.xml</include>
             </includes>
         </fileSet>

@@ -1,3 +1,4 @@
+#set($d="$")
 plugins {
     id "io.spring.dependency-management" version "1.0.6.RELEASE"
     id "com.github.johnrengelman.shadow" version "4.0.2"
@@ -28,8 +29,8 @@ configurations {
 }
 
 dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:\${kotlinVersion}"
-    compile "org.jetbrains.kotlin:kotlin-reflect:\${kotlinVersion}"
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:\${d}{kotlinVersion}"
+    compile "org.jetbrains.kotlin:kotlin-reflect:\${d}{kotlinVersion}"
     compile "io.micronaut:micronaut-runtime"
     compile "io.micronaut:micronaut-http-client"
     compile "io.micronaut:micronaut-http-server-netty"

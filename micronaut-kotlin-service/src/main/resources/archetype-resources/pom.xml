@@ -35,12 +35,12 @@
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
             <artifactId>kotlin-stdlib-jdk8</artifactId>
-            <version>${kotlin.version}</version>
+            <version>\${d}{kotlin.version}</version>
         </dependency>
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
             <artifactId>kotlin-reflect</artifactId>
-            <version>${kotlin.version}</version>
+            <version>\${d}{kotlin.version}</version>
         </dependency>
         <dependency>
             <groupId>io.micronaut</groupId>
@@ -179,12 +179,12 @@
                                 <annotationProcessorPath>
                                     <groupId>io.micronaut</groupId>
                                     <artifactId>micronaut-inject-java</artifactId>
-                                    <version>${micronaut.version}</version>
+                                    <version>\${d}{micronaut.version}</version>
                                 </annotationProcessorPath>
                                 <annotationProcessorPath>
                                     <groupId>io.micronaut</groupId>
                                     <artifactId>micronaut-validation</artifactId>
-                                    <version>${micronaut.version}</version>
+                                    <version>\${d}{micronaut.version}</version>
                                 </annotationProcessorPath>
                             </annotationProcessorPaths>
                         </configuration>
@@ -197,7 +197,6 @@
                         <configuration>
                             <sourceDirs>
                                 <sourceDir>src/main/kotlin</sourceDir>
-                                <sourceDir>src/main/java</sourceDir>
                             </sourceDirs>
                         </configuration>
                     </execution>
@@ -214,12 +213,12 @@
                                 <annotationProcessorPath>
                                     <groupId>io.micronaut</groupId>
                                     <artifactId>micronaut-inject-java</artifactId>
-                                    <version>${micronaut.version}</version>
+                                    <version>\${d}{micronaut.version}</version>
                                 </annotationProcessorPath>
                                 <annotationProcessorPath>
                                     <groupId>io.micronaut</groupId>
                                     <artifactId>micronaut-validation</artifactId>
-                                    <version>${micronaut.version}</version>
+                                    <version>\${d}{micronaut.version}</version>
                                 </annotationProcessorPath>
                             </annotationProcessorPaths>
                         </configuration>
@@ -241,7 +240,7 @@
                     <dependency>
                         <groupId>org.jetbrains.kotlin</groupId>
                         <artifactId>kotlin-maven-allopen</artifactId>
-                        <version>${kotlin.version}</version>
+                        <version>\${d}{kotlin.version}</version>
                     </dependency>
                 </dependencies>
             </plugin>
