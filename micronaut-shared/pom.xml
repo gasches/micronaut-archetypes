@@ -9,25 +9,14 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>micronaut-groovy-service</artifactId>
-    <packaging>maven-archetype</packaging>
+    <artifactId>micronaut-shared</artifactId>
+    <packaging>jar</packaging>
 
     <name>${project.groupId}:${project.artifactId}</name>
-    <description>Micronaut Groovy Service Archetype</description>
+    <description>Shared Resources Of Micronaut Archetypes</description>
 
     <build>
-        <extensions>
-            <extension>
-                <groupId>org.apache.maven.archetype</groupId>
-                <artifactId>archetype-packaging</artifactId>
-                <version>${archetype-packaging.version}</version>
-            </extension>
-        </extensions>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-archetype-plugin</artifactId>
-            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
@@ -38,14 +27,12 @@
                 <executions>
                     <execution>
                         <goals>
-                            <goal>process</goal>
+                            <goal>bundle</goal>
                         </goals>
                         <configuration>
-                            <resourceBundles>
-                                <resourceBundle>
-                                    ${project.groupId}:micronaut-shared:${project.version}
-                                </resourceBundle>
-                            </resourceBundles>
+                            <includes>
+                                <include>archetype-resources/**</include>
+                            </includes>
                         </configuration>
                     </execution>
                 </executions>
@@ -57,27 +44,19 @@
                 <directory>src/main/resources</directory>
                 <filtering>true</filtering>
                 <includes>
-                    <include>archetype-resources/pom.xml</include>
-                    <include>archetype-resources/build.gradle</include>
+                    <include>archetype-resources/.mvn/wrapper/maven-wrapper.properties</include>
+                    <include>archetype-resources/gradle/wrapper/gradle-wrapper.properties</include>
                 </includes>
             </resource>
             <resource>
                 <directory>src/main/resources</directory>
                 <filtering>false</filtering>
                 <excludes>
-                    <exclude>archetype-resources/pom.xml</exclude>
-                    <exclude>archetype-resources/build.gradle</exclude>
+                    <exclude>archetype-resources/.mvn/wrapper/maven-wrapper.properties</exclude>
+                    <exclude>archetype-resources/gradle/wrapper/gradle-wrapper.properties</exclude>
                 </excludes>
             </resource>
         </resources>
     </build>
-
-    <dependencies>
-        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>micronaut-shared</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-    </dependencies>
 
 </project>

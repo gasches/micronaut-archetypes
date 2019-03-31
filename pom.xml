@@ -50,6 +50,7 @@
         <source-plugin.version>3.0.1</source-plugin.version>
         <javadoc-plugin.version>3.0.1</javadoc-plugin.version>
         <gpg-plugin.version>1.6</gpg-plugin.version>
+        <remote-resources-plugin.version>1.6.0</remote-resources-plugin.version>
 
         <jdk.version>1.8</jdk.version>
         <micronaut.version>1.1.0.M2</micronaut.version>
@@ -71,12 +72,21 @@
                     </configuration>
                 </plugin>
                 <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-resources-plugin</artifactId>
                     <version>${resources-plugin.version}</version>
                     <configuration>
                         <addDefaultExcludes>false</addDefaultExcludes>
                         <encoding>UTF-8</encoding>
                         <escapeString>\</escapeString>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-remote-resources-plugin</artifactId>
+                    <version>${remote-resources-plugin.version}</version>
+                    <configuration>
+                        <encoding>UTF-8</encoding>
                     </configuration>
                 </plugin>
             </plugins>
@@ -152,5 +162,6 @@
         <module>micronaut-kotlin-cli</module>
         <module>micronaut-groovy-service</module>
         <module>micronaut-groovy-cli</module>
+        <module>micronaut-shared</module>
     </modules>
 </project>

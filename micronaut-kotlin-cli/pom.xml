@@ -32,6 +32,24 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-remote-resources-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>process</goal>
+                        </goals>
+                        <configuration>
+                            <resourceBundles>
+                                <resourceBundle>
+                                    ${project.groupId}:micronaut-shared:${project.version}
+                                </resourceBundle>
+                            </resourceBundles>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
 
         <resources>
@@ -42,8 +60,6 @@
                     <include>archetype-resources/pom.xml</include>
                     <include>archetype-resources/build.gradle</include>
                     <include>archetype-resources/gradle.properties</include>
-                    <include>archetype-resources/.mvn/wrapper/maven-wrapper.properties</include>
-                    <include>archetype-resources/gradle/wrapper/gradle-wrapper.properties</include>
                 </includes>
             </resource>
             <resource>
@@ -53,11 +69,17 @@
                     <exclude>archetype-resources/pom.xml</exclude>
                     <exclude>archetype-resources/build.gradle</exclude>
                     <exclude>archetype-resources/gradle.properties</exclude>
-                    <exclude>archetype-resources/.mvn/wrapper/maven-wrapper.properties</exclude>
-                    <exclude>archetype-resources/gradle/wrapper/gradle-wrapper.properties</exclude>
                 </excludes>
             </resource>
         </resources>
     </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>micronaut-shared</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>
