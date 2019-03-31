@@ -57,7 +57,12 @@
             <directory>src/main/resources</directory>
             <includes>
                 <include>application.yml</include>
-                <include>logback.xml</include>
+            </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+            <directory>src/main/resources</directory>
+            <includes>
+                <include>log4j2.xml</include>
             </includes>
         </fileSet>
         <fileSet filtered="true" packaged="true" encoding="UTF-8">
