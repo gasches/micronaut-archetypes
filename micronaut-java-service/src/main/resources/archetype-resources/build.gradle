@@ -37,9 +37,10 @@ dependencies {
     compile "io.micronaut:micronaut-http-server-netty"
     compileOnly "io.micronaut:micronaut-inject-java"
     runtime "ch.qos.logback:logback-classic:${logback.version}"
-    testCompile "junit:junit:4.12"
-    testCompile "io.micronaut:micronaut-inject-java"
-    testCompile "org.hamcrest:hamcrest-all:1.3"
+    testAnnotationProcessor "io.micronaut:micronaut-inject-java"
+    testCompile "org.junit.jupiter:junit-jupiter-api:5.3.2"
+    testCompile "io.micronaut.test:micronaut-test-junit5"
+    testRuntime "org.junit.jupiter:junit-jupiter-engine:5.3.2"
 }
 
 shadowJar {
@@ -51,6 +52,12 @@ test.classpath += configurations.developmentOnly
 run.jvmArgs('-noverify', '-XX:TieredStopAtLevel=1', '-Dcom.sun.management.jmxremote')
 
 mainClassName = "\${package}.Application"
+
+// use JUnit 5 platform
+test {
+    useJUnitPlatform()
+}
+
 tasks.withType(JavaCompile){
     options.encoding = "UTF-8"
     options.compilerArgs.add('-parameters')
