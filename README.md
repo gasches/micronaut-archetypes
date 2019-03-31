@@ -27,7 +27,7 @@ mvn archetype:generate \
     -DinteractiveMode=false \
     -DarchetypeGroupId=cc.gasches.archetypes \
     -DarchetypeArtifactId=micronaut-java-service \
-    -DarchetypeVersion=1.1.0.M2 \
+    -DarchetypeVersion=1.1.0.M2-1 \
     -DgroupId=com.example \
     -DartifactId=micronaut-example \
     -Dpackage=com.example.micronaut
@@ -43,7 +43,7 @@ mvn archetype:generate \
     -DinteractiveMode=false \
     -DarchetypeGroupId=cc.gasches.archetypes \
     -DarchetypeArtifactId=micronaut-kotlin-service \
-    -DarchetypeVersion=1.1.0.M2 \
+    -DarchetypeVersion=1.1.0.M2-1 \
     -DgroupId=com.example \
     -DartifactId=micronaut-example \
     -Dpackage=com.example.micronaut
@@ -57,7 +57,7 @@ mvn archetype:generate \
     -DinteractiveMode=false \
     -DarchetypeGroupId=cc.gasches.archetypes \
     -DarchetypeArtifactId=micronaut-groovy-service \
-    -DarchetypeVersion=1.1.0.M2 \
+    -DarchetypeVersion=1.1.0.M2-1 \
     -DgroupId=com.example \
     -DartifactId=micronaut-example \
     -Dpackage=com.example.micronaut
@@ -74,7 +74,7 @@ mvn archetype:generate \
     -DinteractiveMode=false \
     -DarchetypeGroupId=cc.gasches.archetypes \
     -DarchetypeArtifactId=micronaut-java-cli \
-    -DarchetypeVersion=1.1.0.M2 \
+    -DarchetypeVersion=1.1.0.M2-1 \
     -DgroupId=com.example \
     -DartifactId=micronaut-example \
     -Dpackage=com.example.micronaut
@@ -87,7 +87,7 @@ mvn archetype:generate \
     -DinteractiveMode=false \
     -DarchetypeGroupId=cc.gasches.archetypes \
     -DarchetypeArtifactId=micronaut-kotlin-cli \
-    -DarchetypeVersion=1.1.0.M2 \
+    -DarchetypeVersion=1.1.0.M2-1 \
     -DgroupId=com.example \
     -DartifactId=micronaut-example \
     -Dpackage=com.example.micronaut
@@ -100,7 +100,7 @@ mvn archetype:generate \
     -DinteractiveMode=false \
     -DarchetypeGroupId=cc.gasches.archetypes \
     -DarchetypeArtifactId=micronaut-groovy-cli \
-    -DarchetypeVersion=1.1.0.M2 \
+    -DarchetypeVersion=1.1.0.M2-1 \
     -DgroupId=com.example \
     -DartifactId=micronaut-example \
     -Dpackage=com.example.micronaut
@@ -116,7 +116,7 @@ mvn archetype:generate \
     -DinteractiveMode=false \
     -DarchetypeGroupId=cc.gasches.archetypes \
     -DarchetypeArtifactId=micronaut-java-function-aws \
-    -DarchetypeVersion=1.1.0.M2 \
+    -DarchetypeVersion=1.1.0.M2-1 \
     -DgroupId=com.example \
     -DartifactId=micronaut-example \
     -Dpackage=com.example.micronaut
