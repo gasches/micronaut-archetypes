@@ -3,7 +3,7 @@ Micronaut Maven Archetypes
 
 Summary
 -------
-Maven Archetypes For Micronaut Framework.
+Maven Archetypes For [Micronaut](http://micronaut.io) Framework.
 
 To see available archetypes and pick one to instantiate:
 
