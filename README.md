@@ -30,7 +30,7 @@ mvn archetype:generate \
     -DarchetypeVersion=1.1.0.M2-1 \
     -DgroupId=com.example \
     -DartifactId=micronaut-example \
-    -Dpackage=com.example.micronaut
+    -Dpackage=com.example.micronaut \
     -DbuildTool=maven
 ```
 
@@ -46,7 +46,7 @@ mvn archetype:generate \
     -DarchetypeVersion=1.1.0.M2-1 \
     -DgroupId=com.example \
     -DartifactId=micronaut-example \
-    -Dpackage=com.example.micronaut
+    -Dpackage=com.example.micronaut \
     -DbuildTool=maven
 ```
 
@@ -60,7 +60,7 @@ mvn archetype:generate \
     -DarchetypeVersion=1.1.0.M2-1 \
     -DgroupId=com.example \
     -DartifactId=micronaut-example \
-    -Dpackage=com.example.micronaut
+    -Dpackage=com.example.micronaut \
     -DbuildTool=maven
 ```
 
